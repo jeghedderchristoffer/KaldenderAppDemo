@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
 
-    var wHeight = $(window).height(); 
+    var wHeight = $(window).height();
 
     function resizedw() {
         wHeight = $(window).height();
