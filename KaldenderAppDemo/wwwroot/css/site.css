@@ -91,4 +91,19 @@ fc-state-active {
     border: 1px solid #000
 }
 
+.fc-toolbar .fc-left {
+    margin-left: 15px !important;
+}
+
+.fc-toolbar .fc-right {
+    margin-right: 15px !important;
+}
+
+
+@media screen (max-width: 767px){
+    .fc-toolbar .fc-center h2 {
+        margin-top: 150px !important;
+    }
+}
+
 

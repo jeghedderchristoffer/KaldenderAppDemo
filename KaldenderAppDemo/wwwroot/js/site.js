@@ -14,6 +14,7 @@
     };
 
 
+
     // Calendar
     $('#calendar').fullCalendar({
         height: wHeight,
@@ -24,6 +25,18 @@
             center: 'title',
             right: 'month,agendaWeek,agendaDay'
         },
+
+        eventClick: function (event, jsEvent, view) {
+
+            $('#modalTitle').html(event.title);
+            $('#modalBody').html(event.description);
+            $('#modalBody').html(event.imac);
+            $('#eventUrl').attr('href', event.url);
+            $('#fullCalModal').modal('show');
+           
+        },
+   
+
         defaultView: 'agendaWeek',
         editable: true,
         slotEventOverlap: false,
@@ -32,7 +45,8 @@
                 title: 'Long Event 1',
                 start: '2017-05-15 09:00',
                 end: '2017-05-15 11:00', 
-                url: ''
+                description: 'Dette er en prøve',
+                imac: 'abc123456789'
             },
             {
                 title: 'Long Event 2',
@@ -166,3 +180,17 @@
         ]
     });
 });
+
+//var pressTimer;
+
+//$(".body-content").mouseup(function(){
+//  clearTimeout(pressTimer);
+//  // Clear timeout
+//  return false;
+//}).mousedown(function(){
+//    // Set timeout
+//    pressTimer = window.setTimeout(function () { alert() }, 1000);
+//  return false; 
+//});
+
+
