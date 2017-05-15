@@ -26,40 +26,143 @@
         },
         defaultView: 'agendaWeek',
         editable: true,
+        slotEventOverlap: false,
         events: [
             {
-                title: 'Long Event',
-                start: '2017-05-11 09:00',
-                end: '2017-05-11 11:00'
+                title: 'Long Event 1',
+                start: '2017-05-15 09:00',
+                end: '2017-05-15 11:00', 
+                url: ''
             },
             {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2014-06-09T16:00:00'
+                title: 'Long Event 2',
+                start: '2017-05-15 11:00',
+                end: '2017-05-15 12:00'
             },
             {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2014-06-16T16:00:00'
+                title: 'Long Event 3',
+                start: '2017-05-15 12:00',
+                end: '2017-05-15 14:00'
             },
             {
-                title: 'Meeting',
-                start: '2014-06-12T10:30:00',
-                end: '2014-06-12T12:30:00'
+                title: 'Long Event 4',
+                start: '2017-05-15 14:00',
+                end: '2017-05-15 15:00'
             },
             {
-                title: 'Lunch',
-                start: '2014-06-12T12:00:00'
+                title: 'Long Event 5',
+                start: '2017-05-15 15:00',
+                end: '2017-05-15 17:00'
+            },
+
+            //
+            {
+                title: 'Long Event 1',
+                start: '2017-05-16 09:00',
+                end: '2017-05-16 11:00'
             },
             {
-                title: 'Birthday Party',
-                start: '2014-06-13T07:00:00'
+                title: 'Long Event 2',
+                start: '2017-05-16 11:00',
+                end: '2017-05-16 12:00'
             },
             {
-                title: 'Click for Google',
-                url: 'http://google.com/',
-                start: '2014-06-28'
+                title: 'Long Event 3',
+                start: '2017-05-16 12:00',
+                end: '2017-05-16 14:00'
+            },
+            {
+                title: 'Long Event 4',
+                start: '2017-05-16 14:00',
+                end: '2017-05-16 15:00'
+            },
+            {
+                title: 'Long Event 5',
+                start: '2017-05-16 15:00',
+                end: '2017-05-16 17:00'
+            },
+
+            //
+            {
+                title: 'Long Event 1',
+                start: '2017-05-17 09:00',
+                end: '2017-05-17 11:00'
+            },
+            {
+                title: 'Long Event 2',
+                start: '2017-05-17 11:00',
+                end: '2017-05-17 12:00'
+            },
+            {
+                title: 'Long Event 3',
+                start: '2017-05-17 12:00',
+                end: '2017-05-17 14:00'
+            },
+            {
+                title: 'Long Event 4',
+                start: '2017-05-17 14:00',
+                end: '2017-05-17 15:00'
+            },
+            {
+                title: 'Long Event 5',
+                start: '2017-05-17 15:00',
+                end: '2017-05-17 17:00'
+            },
+
+            //
+            {
+                title: 'Long Event 1',
+                start: '2017-05-18 09:00',
+                end: '2017-05-18 11:00'
+            },
+            {
+                title: 'Long Event 2',
+                start: '2017-05-18 11:00',
+                end: '2017-05-18 12:00'
+            },
+            {
+                title: 'Long Event 3',
+                start: '2017-05-18 12:00',
+                end: '2017-05-18 14:00'
+            },
+            {
+                title: 'Long Event 4',
+                start: '2017-05-18 14:00',
+                end: '2017-05-18 15:00'
+            },
+            {
+                title: 'Long Event 5',
+                start: '2017-05-18 15:00',
+                end: '2017-05-18 17:00'
+            },
+            //
+
+            {
+                title: 'Long Event 1',
+                start: '2017-05-19 09:00',
+                end: '2017-05-19 11:00'
+            },
+            {
+                title: 'Long Event 2',
+                start: '2017-05-19 11:00',
+                end: '2017-05-19 12:00'
+            },
+            {
+                title: 'Long Event 3',
+                start: '2017-05-19 12:00',
+                end: '2017-05-19 14:00'
+            },
+            {
+                title: 'Long Event 4',
+                start: '2017-05-19 14:00',
+                end: '2017-05-19 15:00'
+            },
+            {
+                title: 'Long Event 5',
+                start: '2017-05-19 15:00',
+                end: '2017-05-19 17:00'
             }
+
         ]
     });
 });
