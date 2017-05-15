@@ -1,18 +1,20 @@
 ﻿$(document).ready(function () {
 
-    var wHeight = $(window).height();
 
+    // Resize screen
+    var wHeight = $(window).height() - 15;
     function resizedw() {
-        wHeight = $(window).height();
+        wHeight = $(window).height() - 15;
         $('#calendar').fullCalendar('option', 'height', wHeight);
-    }
-
+    };
     var doit;
     window.onresize = function () {
         clearTimeout(doit);
         doit = setTimeout(resizedw, 100);
     };
 
+
+    // Calendar
     $('#calendar').fullCalendar({
         height: wHeight,
         allDaySlot: false,

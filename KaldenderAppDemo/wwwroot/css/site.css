@@ -1,5 +1,5 @@
 ﻿body {
-  
+    
 }
 
 /* Wrapping element */
@@ -79,5 +79,16 @@ textarea {
     height: 100vh;
 }
 
+
+.fc button {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px !important;
+    height: auto !important; 
+}
+
+fc-state-active {
+    border: 1px solid #000
+}
 
 

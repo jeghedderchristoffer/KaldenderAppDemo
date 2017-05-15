@@ -8,11 +8,11 @@
     ViewData["Title"] = "Log in";
 }
 
-<div class="row">
     <div class="col-md-12 login-height">
-        <div class="outer">
+        <div class="outer"> 
             <div class="middle">
                 <div class="inner">
+                    <img src="~/images/mrmac.PNG" />
                     <div class="login-box">
                         <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
                             <div asp-validation-summary="All" class="text-danger"></div>
@@ -46,7 +46,6 @@
             </div>
         </div>
     </div>
-</div>
 
 @section Scripts {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
