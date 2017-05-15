@@ -40,6 +40,18 @@
         defaultView: 'agendaWeek',
         editable: true,
         slotEventOverlap: false,
+        eventDragStart: function (event, jsEvent, view) {
+            $('#calendar').bind('touchmove', function (e) { e.preventDefault() })
+        },
+        eventDragStop: function (event, jsEvent, view) {
+            $('#calendar').unbind('touchmove')
+        },
+        eventResizeStart: function (event, jsEvent, view) {
+            $('#calendar').bind('touchmove', function (e) { e.preventDefault() })
+        },
+        eventResizeStop: function (event, jsEvent, view) {
+            $('#calendar').unbind('touchmove')
+        },
         events: [
             {
                 title: 'Long Event 1',
@@ -180,17 +192,3 @@
         ]
     });
 });
-
-//var pressTimer;
-
-//$(".body-content").mouseup(function(){
-//  clearTimeout(pressTimer);
-//  // Clear timeout
-//  return false;
-//}).mousedown(function(){
-//    // Set timeout
-//    pressTimer = window.setTimeout(function () { alert() }, 1000);
-//  return false; 
-//});
-
-
