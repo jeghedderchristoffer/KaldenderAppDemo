@@ -27,11 +27,23 @@
         defaultView: 'agendaWeek',
         editable: true,
         slotEventOverlap: false,
+        eventDragStart: function (event, jsEvent, view) {
+            $('#calendar').bind('touchmove', function (e) { e.preventDefault() })
+        },
+        eventDragStop: function (event, jsEvent, view) {
+            $('#calendar').unbind('touchmove')
+        },
+        eventResizeStart: function (event, jsEvent, view) {
+            $('#calendar').bind('touchmove', function (e) { e.preventDefault() })
+        },
+        eventResizeStop: function (event, jsEvent, view) {
+            $('#calendar').unbind('touchmove')
+        },
         events: [
             {
                 title: 'Long Event 1',
                 start: '2017-05-15 09:00',
-                end: '2017-05-15 11:00', 
+                end: '2017-05-15 11:00',
                 url: ''
             },
             {
