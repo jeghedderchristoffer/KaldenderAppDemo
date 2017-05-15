@@ -81,10 +81,10 @@ textarea {
 
 
 .fc button {
-    background: #ff0000;
+    background: #6ba5c1;
     color: #fff;
     padding: 10px !important;
-    height: auto !important; 
+    height: auto !important;
 }
 
 fc-state-active {
@@ -100,10 +100,23 @@ fc-state-active {
 }
 
 
-@media screen (max-width: 767px){
+@media(max-width:767px) {
     .fc-toolbar .fc-center h2 {
-        margin-top: 150px !important;
+        margin-top: 17px !important;
     }
 }
+
+
+
+@media(max-width: 350px) {
+    .fc-toolbar .fc-left {
+        margin-left: 1px !important;
+    }
+
+    .fc-toolbar .fc-right {
+        margin-right: 1px !important;
+    }
+}
+
 
 

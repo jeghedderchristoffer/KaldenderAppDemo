@@ -20,6 +20,8 @@
         height: wHeight,
         allDaySlot: false,
         lang: 'da',
+        minTime: '07:00', 
+        maxTime: '24:00',
         header: {
             left: 'prev,next today',
             center: 'title',
@@ -29,9 +31,10 @@
         eventClick: function (event, jsEvent, view) {
 
             $('#modalTitle').html(event.title);
-            $('#modalBody').html(event.description);
-            $('#modalBody').html(event.imac);
-            $('#eventUrl').attr('href', event.url);
+            $('#rep').html(event.reparation);
+            $('#adresse').html(event.adresse);
+            $('#tidint').html(event.tidsInterval);
+            $('#ktid').html(event.kørselsTid); 
             $('#fullCalModal').modal('show');
            
         },
@@ -54,11 +57,13 @@
         },
         events: [
             {
-                title: 'Long Event 1',
+                title: 'Gunder Børge',
                 start: '2017-05-15 09:00',
                 end: '2017-05-15 11:00', 
-                description: 'Dette er en prøve',
-                imac: 'abc123456789'
+                reparation: 'iPhone 6, Skærm, Sort', 
+                adresse: 'Skovlundevej 44, 2000, Frederiksberg', 
+                tidsInterval: '09:00 - 11:00', 
+                kørselsTid: '30 min.'
             },
             {
                 title: 'Long Event 2',
